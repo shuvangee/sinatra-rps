@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+  <h2>We played paper!</h2>
+
+  <% if @samp == "scissors" %>
+    <h2><%= @outcome %></h2>
+    <h2>We lost!</h2>
+  <% elsif @samp == "paper" %>
+    <h2><%= @outcome %></h2>
+    <h2>We tied!</h2>
+  <% elsif @samp == "rock"%>
+    <h2><%= @outcome %></h2>
+    <h2>We won!</h2>
+  <% end %>
+
+  <div>
+    <div><a href="/">Rules</a></div>
+  </div>
+  
+</body>
+</html>
